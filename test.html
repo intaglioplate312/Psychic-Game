@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> test
+		
+	</title>
+</head>
+<body>
+
+<h1>Psychic Game</h1>    
+Type a letter between a and z
+<input id="guess" type="text">
+<input type="button" value="guess" onClick="guessOne()"/>
+<p id="message">&nbsp;</p>
+
+<script type="text/javascript">
+	
+var guessCount = 0;
+var MAX_GUESSES = 6;
+var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
+function guessOne(){
+  // Get a guess from the player
+  var guess = document.getElementById("guess").value;
+
+  if (guess == alphabet){
+    document.getElementById("message").innerHTML= "It took you " +guessCount+ " guesses";
+    return;  // prevents saying 'ran out' if guessed in last round
+  } else if (guess === alphabet){
+    document.getElementById("message").innerHTML= "Guess again. The number is higher than "+guess;
+  } else {
+    document.getElementById("message").innerHTML= "Guess again. The number is lower than "+guess;
+  }
+  guessCount += 1;
+
+  if (guessCount >= MAX_GUESSES) {
+    document.getElementById("message").innerHTML= "Sorry, you ran out of guesses.  The number was " + alphabet;
+  }
+  
+  // Lend a hand by clearing out their last guess
+  document.getElementById("guess").value = "";  
+}    
+
+
+</script>
+</body>
+</html>
