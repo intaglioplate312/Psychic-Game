@@ -46,7 +46,8 @@ body{
  	font-size: 1.75em;
  	font=font-weight: bold;
  	text-align: center;
- 	letter-spacing: 1px;
+ 	letter-spacing: .5px;
+ 	font-style: oblique;
  }
 
  h2 {
