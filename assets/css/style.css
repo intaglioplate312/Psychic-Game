@@ -6,39 +6,54 @@ html {
 body{
 	margin: 0 0 100px;
 	font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
-	background-color: black;	
+	background-color: #000;	
 	color: white;
 	line-height: 150%;
 	box-sizing: border-box;
-}
-
-.container {
-	width: 960px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+	/*background-image: url("../images/ball.png");
+	background-repeat: no-repeat;
+	background-size: 80%;*/
 	
 }
 
-.question {
-	width:40%;
-	position: absolute;
-	bottom: 200px;
-	right:10px;
+header {
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.alpha {
-	width:40%;
-	position: absolute;
-	bottom: 300px;
-	left:210px;
+main {
+	width: 100%;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/ball.png");
+    min-height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
+section {
+	width:50%;
+	float: left;
+	padding-top: 125px;
+	vertical-align: middle;
+}
+
 .float{
 	float: left; 
 }
 
-.clear {
+
+footer {
+	margin-left: auto;
+	margin-right: auto;
 	clear: both;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
  }
 
  h1 { 
@@ -50,19 +65,50 @@ body{
  	font-style: oblique;
  }
 
- h2 {
-	font-size: 1em;
-	margin-bottom: 7px;
-	letter-spacing: .5px;
- }
- 
- h3 {
+h4 { 
  	font-size: .75em;
  	font-style: oblique;
  	text-align: center;
  	letter-spacing: .5px;
  }
+
+ h3 {
+	font-size: 1em;
+	margin-bottom: 7px;
+	letter-spacing: .5px;
+
+ }
+
+ h2 {
+	font-size: 1em;
+	margin-bottom: 7px;
+	color:#232b2b;
+	margin: 0 10% 0 30%;
+	text-align: left;
+ }
+ h4 {
+	
+ }
+ 
+ h6 {
+ 	font-size: .75em;
+ 	font-style: oblique;
+ 	text-align: center;
+ 	letter-spacing: .5px;
+ 	color:#3b444b:;
+ }
  p {
  	color:black;
  }
+ 
+ a
+  {
+ 	text-decoration:none;
+ 	color: #353839;
+ }
 
+
+ a:hover
+  {	color: #414a4c;
+ 	text-decoration: underline;
+ }

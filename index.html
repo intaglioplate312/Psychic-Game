@@ -12,7 +12,7 @@
 			<!-- Up to 70 Characters of Keyword-relevant text here -->
 			<title>Psychic Game</title>
 		<!--Faviocon-->
-		<!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 		<!--Myers reset-->
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
@@ -27,95 +27,43 @@
 		<!--Local CSS-->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
-
-		<header>
-			<div class="container" >
-
-				<h1> The Ball has a Letter in Mind</h1>
-				<!--<img src="assets/images/preview.png" alt="crystal ball">-->
-				</div><!--close container-->
-		
-		</header>
-
-		<div class="container">
-		<img src="assets/images/ball.png" alt="crystal ball" width="100%">
-
-			<div class="alpha">
-			 <p> user choices go here</p>
-			 </div><!--close alpha-->
-			<div class="question">
-				<h2>Can You Guess the Letter</h2>
-				<p><span><h2 id="userGuess"></h2>
-				<p><span><h2 id="guesses"></h2>
-				<p><span><h2 id="wins"></h2>
-				<p><span><h2 id="losses"></h2>
-
-			</div>
-		</div><!--close container-->
-
-		<footer style="clear: both;">
-		<div class="container">
-			<h3> something pithy goes here </h3>
-			</div><!--close container-->
-		</footer>
+<!DOCTYPE html>
+<html lang="en">
 
 
+<body>
+	<header>
+		<h1>Are you Psychic</h1>
+		<h4> Can You Match the Computer's Pick? </h4>
+	</header>
+	<main>
+		<!--<img src="assets/images/ball.png" alt="adobe stock image, crystal ball on tarot cards" width="100%">-->
+		<section>
+				<h2>Guess Any letter<br>from A - Z.</h2>
+		        <h2 id="letter">Your Guesses so far:</h2>    
+		</section>
 
-
-
-
-		<script type="text/javascript">
-		/* Psuedo Code/Outline
-		computer pick letter
-		ask "guess which letter?"
-		allow 9 guesses
-		displya guesses
-		track wins
-		track losses after 9 guesses
-		restart game after win or loss
-		*/
-
-
-			/*Variables for tracking our wins, losses and ties. They begin at 0.*/
-			var wins = 0;
-			var losses = 0;
-			var guesses = 13;
-
-			var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-			/*alternalte string to try once code works 
-			alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');*/
-
-    			/*window.alert ("See if you are Psychic")*/
-    			
-    			var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
-    			console.log(computerChoice)
-
-
-
-				// When the user presses a key, run the following function...
-				document.onkeypress = function(event) {
-				var userGuess = event.key;
-		
-				if(userGuess = computerChoice){
-					wins++; 
-				    }
-				   
-				    else{
-				        guesses--;
-				    }
-
-				    if(guesses = 0){
-				        losses++
-				    }
-	}
+		<section>
+		       	<h3 id="wins">Wins: </h3>
+		        <h3 id="losses">Losses: </h3>
+		        <h3 id="guessLeft">Guesses Left: </h3>
+		</section>
+	</main>
+	
+	<footer>
+		<a href="https://justofflsd.com"><h6> &#169; copyright justofflsd.com</h6></a>
+	</footer>
   
-				    document.getElementById('wins').innerHTML = "Wins: " + wins;
-				    document.getElementById('losses').innerHTML = "Losses: " + losses;
-				    document.getElementById('guesses').innerHTML = "Guesses left: " + guesses;
-			
+       <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
 
-		</script>
+</html>
 
+
+	
+
+		<!-- Local javascript, cobbled together from internet, classmates and demo's-->
+		<script scr="assets/javascript/game.js"></script>
 
 		<!-- jQuery library
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
