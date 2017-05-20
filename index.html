@@ -3,73 +3,55 @@
 
 	<head>
 		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	
+		<!--responsive-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 		<!--meta name=”description” content=”155 characters of message matching text with a call to action goes here”-->
 		<meta name="Just off Lake Shore Drive, A Creative Upstart for Print Design, Experiential Modeling and one Day Full Stack Development, maybe.">
+
 			<!-- Up to 70 Characters of Keyword-relevant text here -->
 			<title>Psychic Game</title>
+
 		<!--Faviocon-->
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 		<!--Myers reset-->
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-	
-		<!-- Latest compiled and minified CSS
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-
-
-		<!-- Optional theme
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
-	
 		<!--Local CSS-->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
-<!DOCTYPE html>
-<html lang="en">
 
+	<body>
+		<header>
 
-<body>
-	<header>
-		<h1>Are you Psychic</h1>
-		<h4> Can You Match the Computer's Pick? </h4>
-	</header>
-	<main>
-		<!--<img src="assets/images/ball.png" alt="adobe stock image, crystal ball on tarot cards" width="100%">-->
-		<section>
-				<h2>Guess Any letter<br>from A - Z.</h2>
-		        <h2 id="letter">Your Guesses so far:</h2>    
-		</section>
+			<h1>Are You Psychic</h1>
+			<h4> Can You Match the Computer's Pick? </h4>
+			
+		</header>
 
-		<section>
-		       	<h3 id="wins">Wins: </h3>
-		        <h3 id="losses">Losses: </h3>
-		        <h3 id="guessLeft">Guesses Left: </h3>
-		</section>
-	</main>
-	
-	<footer>
-		<a href="https://justofflsd.com"><h6> &#169; copyright justofflsd.com</h6></a>
-	</footer>
-  
-       <script type="text/javascript" src="assets/javascript/game.js"></script>
-</body>
+		<main>
+			<!--had issues with background displaying inside box the way I wanted to just in case
+			<img src="assets/images/ball.png" alt="adobe stock image, crystal ball on tarot cards" width="100%">
+			-->
+			<section>
+				<h2>Guess Any Letter<br>from A - Z.</h2>
+				<h2 id="letter">Your Guesses:</h2>    
+			</section>
 
-</html>
-
-
-	
-
-		<!-- Local javascript, cobbled together from internet, classmates and demo's-->
-		<script scr="assets/javascript/game.js"></script>
-
-		<!-- jQuery library
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-
-		<!-- Latest compiled Bootstrap JavaScript
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
+			<section>
+				<h3 id="wins">Wins: </h3>
+				<h3 id="losses">Losses: </h3>
+				<h3 id="guessLeft">Guesses Left: </h3>
+				<!--for initial testing only, at Nathan's suggetion
+				<h3 id="computer">Computer: </h3>
+				-->
+			</section>
+		</main>
+		
+		<footer>
+			<a href="https://justofflsd.com"><h6> &#169; copyright justofflsd.com</h6></a>
+		</footer>
+	  		
+	       <script type="text/javascript" src="assets/javascript/game.js"></script>
 	</body>
 </html>
+
+    
