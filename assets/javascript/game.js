@@ -67,6 +67,8 @@ document.onkeyup = function(event) {
             reset();
       }
       };
+var audio = document.getElementById('gypsy');
+    audio.play();
 
 
 
