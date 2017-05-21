@@ -11,7 +11,6 @@ var guessedLetters = [];
 
 //Computer selects letter
 var letterToGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-/* for initial test document.getElementById('computer').innerHTML = "Computer Choice: " + letterToGuess;*/
 
 //Reset varibles
 //Grabbing the HTML element and setting it equal to the guessesLeft
@@ -55,7 +54,7 @@ document.onkeyup = function(event) {
       if (userGuess == letterToGuess){
           wins++;
           document.querySelector('#wins').innerHTML = "Wins: " + wins;
-          // Call the reset. 
+          // Call the reset 
           reset();
       }
       }
@@ -63,7 +62,7 @@ document.onkeyup = function(event) {
             // Update the html to display the loss 
             losses++;
             document.querySelector('#losses').innerHTML = "Losses: " + losses;
-            // Call the reset. 
+            // Call the reset 
             reset();
       }
       };

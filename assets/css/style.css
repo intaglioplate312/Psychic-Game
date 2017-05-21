@@ -10,15 +10,12 @@ body{
 	color: white;
 	line-height: 150%;
 	box-sizing: border-box;
-	/*background-image: url("../images/ball.png");
-	background-repeat: no-repeat;
-	background-size: 80%;*/
-	
 }
 
 header {
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 main {
@@ -27,26 +24,16 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 	background-image: url("../images/ball.png");
-    min-height: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 section {
 	width:50%;
 	float: left;
-	padding-top: 125px;
+	padding-top: 100px;
 	vertical-align: middle;
-}
-
- /*#gypsy { 
- 	display: none;
- 	}
-*/
-.float{
-	float: left; 
 }
 
 footer {
@@ -57,43 +44,42 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    text-align: center;
  }
 
  h1 { 
  	padding-top:40px;
- 	font-size: 1.75em;
+ 	font-size: 2em;
  	font-weight: bold;
  	text-align: center;
  	letter-spacing: .5px;
  	font-style: oblique;
  }
 
-h4 { 
- 	font-size: .75em;
- 	font-style: oblique;
- 	text-align: center;
- 	letter-spacing: .5px;
- }
-
- h3 {
-	font-size: 1em;
-	margin-bottom: 7px;
-	letter-spacing: .5px;
-
- }
-
  h2 {
-	font-size: 1em;
+	font-size: 1.25em;
 	margin-bottom: 7px;
 	color:#232b2b;
 	margin: 0 10% 0 33%;
 	text-align: left;
 	text-shadow: .5px .25px white;
 	font-weight: bold;
- }
- h4 {
-	
- }
+	line-height: 175%;
+}
+
+ h3 {
+	font-size: 1.25em;
+	margin-bottom: 7px;
+	letter-spacing: .5px;
+	line-height: 175%;
+}
+
+h4 { 
+ 	font-size: .75em;
+ 	font-style: oblique;
+ 	text-align: center;
+ 	letter-spacing: .5px;
+}
  
  h6 {
  	font-size: .75em;
@@ -102,18 +88,63 @@ h4 {
  	letter-spacing: .5px;
  	color:#3b444b:;
  }
- p {
- 	color:black;
+
+ a {
+ 	text-decoration: none;
+ 	color: #58595b;
  }
+
+ a:hover {
+ 	text-decoration: none;
+ 	color: #636466;
+ }
+
+/*medium desktop*/
+@media screen and (max-width: 980px) {
+
+
+}/*close desktop*/
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+h1 { 
+ 	font-size: 1.75em;
+}
+h2, h3{
+	font-size: 1em;
+	line-height: 150%;
+}
+}/*close tablet*/
+
+/*phone*/
+@media screen and (max-width: 640px) {
+h1 { 
+ 	font-size: 1.5em;
+}
+h2, h3{
+	font-size: .75em;
+	line-height: 150%;
+}
+
+section {
+	padding-top: 100px;
+}
+}/*close phone*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
- a
-  {
- 	text-decoration:none;
- 	color: #353839;
- }
-
-
- a:hover
-  {	color: #414a4c;
- 	text-decoration: underline;
- }
